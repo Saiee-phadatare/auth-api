@@ -13,6 +13,6 @@
 
 ## **📂 Postman Collection**  
 <p>You can download and test the API using the <b>Postman Collection</b>:</p>  
-👉 <a href="<your-postman-link>" target="_blank"><b>Download Here</b></a>  
+👉 Download : - https://raw.githubusercontent.com/Saiee-phadatare/auth-api/refs/heads/main/auth-api-collection.json
 
 ---
