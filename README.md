@@ -51,6 +51,24 @@
         <td>Verify email with code</td>
         <td>{ "email": "example@gmail.com", "providedCode": "123456" }</td>
     </tr>
+     <tr>
+        <td>PATCH</td>
+        <td>/api/auth/change-password</td>
+        <td>Change password</td>
+        <td>{ "oldPassword": "oldPass", "newPassword": "newPass" }</td>
+    </tr>
+     <tr>
+        <td>PATCH</td>
+        <td>/api/auth/send-forgetPassword-code</td>
+        <td>Send password reset code</td>
+        <td>{ "email": "example@gmail.com" }</td>
+    </tr>
+     <tr>
+        <td>PATCH</td>
+        <td>/api/auth/verify-forgetPassword-code</td>
+        <td>Reset password with code</td>
+        <td>{ "email": "example@gmail.com", "providedCode": "123456", "newPassword": "newPass" }</td>
+    </tr>
 </table>
 
 <h3>🛠 Post Management Routes</h3>
@@ -72,6 +90,24 @@
         <td>/api/post/single-post?_id={postId}</td>
         <td>Get a single post</td>
         <td>_id in query params</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/api/post/create</td>
+        <td>Update a post</td>
+        <td>{ "title": "Post Title", "description": "Post Description" }</td>
+    </tr>
+     <tr>
+        <td>PUT</td>
+        <td>/api/post/update?_id={postId}</td>
+        <td>Create a new post</td>
+        <td>_id in query params + Body { "title": "New Title", "description": "New Desc" }</td>
+    </tr>
+     <tr>
+        <td>DELETE</td>
+        <td>/api/post/delete?_id={postId}</td>
+        <td>Delete a post</td>
+        <td>_id in query param}</td>
     </tr>
 </table>
 
