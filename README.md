@@ -15,8 +15,7 @@
 
 <h2>📌 API Documentation & Testing</h2>
 <p>For easy testing, use the Postman collection linked below:</p>
-<p>📌 <strong>Postman Collection:</strong> <a href="[https://raw.githubusercontent.com/Saiee-phadatare/auth-api/refs/heads/main/Auth-api.postman_collection![image](https://github.com/user-attachments/assets/b286ce5f-bc50-4ecf-a75f-f88a490d73fb)](https://raw.githubusercontent.com/Saiee-phadatare/auth-api/refs/heads/main/Render.postman_collection.json)
-">Click here to import</a></p>
+<p>📌 <strong>Postman Collection:</strong> <a href="https://raw.githubusercontent.com/Saiee-phadatare/auth-api/refs/heads/main/Render.postman_collection.json">Click here to import</a></p>
 
 <h2>📌 Available Routes</h2>
 
