@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "ae4220bc-e947-48e7-b227-f1fc8d8d59ac",
+		"name": "Render",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41984587"
+	},
+	"item": [
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ssp.saiee@gmail.com\",\r\n    \"password\": \"Test@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/signin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ssp.saiee@gmail.com\",\r\n    \"password\": \"Test@123\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/signin",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/post/all-posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/post/all-posts",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"all-posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/post/single-post?_id=67ce90999e6c92821aa9b8d3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/post/single-post?_id=67ce90999e6c92821aa9b8d3",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"single-post"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "67ce90999e6c92821aa9b8d3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/post/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "client",
+						"value": "not-browser",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2NlOGNmYjllNmM5MjgyMWFhOWI4Y2EiLCJlbWFpbCI6InRlc3R1c2VyQGdtYWlsLmNvbSIsInZlcmlmaWVkIjpmYWxzZSwiaWF0IjoxNzQxNTg5ODE0LCJleHAiOjE3NDE2MTg2MTR9.ijOhMAjk9a8mFdXn3bgqJtLQQHAMhCUOPucOqN7Dny8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Create new post\",\r\n    \"description\": \"description of the post.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/post/create",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/post/update?_id=67ce90999e6c92821aa9b8d3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2NlOGNmYjllNmM5MjgyMWFhOWI4Y2EiLCJlbWFpbCI6InRlc3R1c2VyQGdtYWlsLmNvbSIsInZlcmlmaWVkIjpmYWxzZSwiaWF0IjoxNzQxNTg5ODE0LCJleHAiOjE3NDE2MTg2MTR9.ijOhMAjk9a8mFdXn3bgqJtLQQHAMhCUOPucOqN7Dny8",
+						"type": "text"
+					},
+					{
+						"key": "client",
+						"value": "not-browser",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated Post\",\r\n    \"description\": \"Second post of same user.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/post/update?_id=67ce90999e6c92821aa9b8d3",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"update"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "67ce90999e6c92821aa9b8d3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/post/delete?_id=67ce91959e6c92821aa9b8e1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "client",
+						"value": "not-browser",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2NlOGNmYjllNmM5MjgyMWFhOWI4Y2EiLCJlbWFpbCI6InRlc3R1c2VyQGdtYWlsLmNvbSIsInZlcmlmaWVkIjpmYWxzZSwiaWF0IjoxNzQxNTg5ODE0LCJleHAiOjE3NDE2MTg2MTR9.ijOhMAjk9a8mFdXn3bgqJtLQQHAMhCUOPucOqN7Dny8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/post/delete?_id=67ce91959e6c92821aa9b8e1",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "67ce91959e6c92821aa9b8e1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/send-verification-code",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "client",
+						"value": "not-browser",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2MxOGI3ODA3OTNiYzAyNTcwYzk3NzgiLCJlbWFpbCI6InNzcC5zYWllZUBnbWFpbC5jb20iLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzQxNTkxNjEwLCJleHAiOjE3NDE2MjA0MTB9.ICbxSe4-MTB2124zgDK_UAXEQKlHAs8Af__GgVJg814",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ssp.saiee@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/send-verification-code",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"send-verification-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/verify-verification-code",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ssp.saiee@gmail.com\",\r\n    \"providedCode\": \"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/verify-verification-code",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"verify-verification-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/change-password",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "client",
+						"value": "not-browser",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2MxOGI3ODA3OTNiYzAyNTcwYzk3NzgiLCJlbWFpbCI6InNzcC5zYWllZUBnbWFpbC5jb20iLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzQxNTkxNjEwLCJleHAiOjE3NDE2MjA0MTB9.ICbxSe4-MTB2124zgDK_UAXEQKlHAs8Af__GgVJg814",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"oldPassword\": \"Saiee@68\",\r\n    \"newPassword\": \"S@iee68\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/change-password",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/send-forgetPassword-code",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ssp.saiee@gmail.com\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/send-forgetPassword-code",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"send-forgetPassword-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://auth-api-u72n.onrender.com/api/auth/verify-forgetPassword-code",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ssp.saiee@gmail.com\",\r\n    \"providedCode\": \"920171\",\r\n    \"newPassword\": \"Saiee@68\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://auth-api-u72n.onrender.com/api/auth/verify-forgetPassword-code",
+					"protocol": "https",
+					"host": [
+						"auth-api-u72n",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"verify-forgetPassword-code"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
