@@ -106,10 +106,3 @@
         <td>_id in query param}</td>
     </tr>
 </table>
-
-<h2> How to Use?</h2>
-<ol>
-    <li>Import the Postman collection.</li>
-    <li>Send requests to the provided API endpoints.</li>
-    <li>Use the correct request body and query parameters where required.</li>
-</ol>
