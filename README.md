@@ -13,10 +13,6 @@
 <h2>Live API Deployment</h2>
 <p><strong>Base URL:</strong> <a href="https://auth-api-u72n.onrender.com/">https://auth-api-u72n.onrender.com/</a></p>
 
-<h2>API Documentation & Testing</h2>
-<p>For easy testing, use the Postman collection linked below:</p>
-<p><strong>Postman Collection:</strong> <a href="https://raw.githubusercontent.com/Saiee-phadatare/auth-api/refs/heads/main/Render.postman_collection.json">Click here to import</a></p>
-
 <h2>Available Routes</h2>
 
 <h3>🛠 Authentication Routes</h3>
